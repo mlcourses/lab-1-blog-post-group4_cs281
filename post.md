@@ -112,7 +112,7 @@ This part will use the same set-up from part 3, with one singular alteration. In
 
 We messed around with the function generator. Our function generator had a scale that allowed us to change the frequency from 0.1hz to 1hz and then change the units from hz to khz. As we tested, we realized that a larger frequency meant the light was going to flash a lot faster. This is because the frequency of the power source changed how often the power source pulsed voltage through the circuit. Here is a video of us testing the lightbulb at different frequencies:
 
-<img src="IMG_7119.MOV" width="450"/>
+https://github.com/mlcourses/lab-1-blog-post-group4_cs281/assets/67582698/4b2c5e10-0111-4aea-8d00-f7831145fd5a
 
 ## Conclusion
 After finishing part 4, we learnt about the function generator on the breadboard and also realized that the 5V power source is not the only power source that can power the breadboard. We also learnt what frequency meant in terms of electrical pulses.
@@ -136,7 +136,7 @@ We built the following circuit.
 The circuit is connected to the function generator by the long red wire so the input would change every few seconds from low to high. There is a yellow wire connected to slot 1 on the logic indicator to show the input into the logic indicator. This corresponds to 1A in the specification. According to the specification, the row right below would correspond to 1Y. We connected a yellow wire from a slot in this row to 
 slot 2 in the logic indicator. The expected result would be that the logic indicator in slot 2 and slot 1 would always be opposite (one would be high and the other would be low, and vice versa). The result of testing is as follows:
 
-<img src="NOT gate circuit testing.MOV" width="450"/>
+https://github.com/mlcourses/lab-1-blog-post-group4_cs281/assets/67582698/b86635b0-6e81-4a2f-8049-c5b715a20f72
 
 We then looked at the data sheet of the AND gate to see how it is hooked up. The image below shows the top view of the AND gate:
 
@@ -150,7 +150,7 @@ We tested this by using the logic switches at the bottom of the board. Similar t
 
 The image above shows 3 wires connected to the the right side of the AND gate, corresponding to the two outputs (red and purple) and the one output (yellow). The yellow wire is then connected to the logic indicator to show the result of the AND gate. Because the two switches are set to 0, the logic indicator shows LOW. This is correct. We then tried different combinations of input by turning on and off the switches. The video below shows the AND gate working as expected (notice that the light only shows high when both switches are switched up):
 
-<img src="AND gate circuit testing.MOV" width="450"/>
+https://github.com/mlcourses/lab-1-blog-post-group4_cs281/assets/67582698/3c930dfd-8db7-4fd0-bc79-029a313dd6e7
 
 ## Part 6: Connecting an Arduino Kit to the circuit
 
@@ -172,15 +172,15 @@ Reusing the AND circuit in Part 5, we have a circuit that looks like the followi
 
 The video below shows the result of this.
 
-<img src="Arduino testing.MOV" width="450"/>
+https://github.com/mlcourses/lab-1-blog-post-group4_cs281/assets/67582698/61da72fe-d18c-4628-8493-4e0167b25e94
 
 We then changed the values of A and B to make change the frequency of the input. By reducing both to 200, we got the following result:
 
-<img src="arduino changed frequency.MOV" width="450"/>
+https://github.com/mlcourses/lab-1-blog-post-group4_cs281/assets/67582698/0edb4977-83a3-42c2-9cb1-aba91bb76fa8
 
 We also changed P to 7. Before moving the pin, the Arduino stopped working completely. This was because the pin was still on 13, while the Arduino output is now on pin 7. The following video shows that the Arduino works when we rewire from pin 13 to 7.
 
-<img src="Arduino change pins.MOV" width="450"/>
+https://github.com/mlcourses/lab-1-blog-post-group4_cs281/assets/67582698/2b5c1d41-f969-41ae-ad23-1b41ced98ee3
 
 ## Conclusion
 
